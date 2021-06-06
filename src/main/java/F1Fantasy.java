@@ -4,6 +4,11 @@ import java.util.List;
 public class F1Fantasy {
     public static void main(String[] args) {
 
+        //TODO make raceNumber a globar variable or add to json
+        //TODO make the app runnable from one file
+        //TODO add command to make the app from a promt message
+        //TODO best teams from last x races
+
         int raceNumber = 5;
         String filePath = "src/main/resources/standing_results_race_" + raceNumber + ".json";
         Tuple<List<Pilot>, List<Constructor>> dataTuple = JsonReader.read(filePath);
