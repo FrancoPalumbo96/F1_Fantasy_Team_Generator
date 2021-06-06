@@ -1,8 +1,5 @@
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 public class Team implements Comparable<Team> {
     private List<Pilot> teamPilots;
@@ -89,5 +86,9 @@ public class Team implements Comparable<Team> {
     @Override
     public int compareTo(Team o) {
         return Integer.compare(this.getTeamPoints(), o.getTeamPoints());
+    }
+
+    public void sortPilots(){
+        teamPilots.sort(Collections.reverseOrder());
     }
 }

@@ -21,38 +21,10 @@
     }
   },
   {
-    "pilot": {
-      "name": "P. Gasly",
-      "points": 107,
-      "price": 11.7
-    }
-  },
-  {
-    "pilot": {
-      "name": "M. Verstappen",
-      "points": 226,
-      "price": 25.5
-    }
-  },
-  {
-    "pilot": {
-      "name": "A. Giovinazzi",
-      "points": 42,
-      "price": 8
-    }
-  },
-  {
-    "pilot": {
-      "name": "C. Sainz",
-      "points": 93,
-      "price": 14.7
-    }
-  },
-  {
     "constructor": {
-      "name": "Alfa Romeo Racing",
-      "points": 85,
-      "price": 9.2
+      "name": "Williams",
+      "points": 39,
+      "price": 6.3
     }
   },
   {
@@ -71,6 +43,13 @@
   },
   {
     "pilot": {
+      "name": "L. Hamilton",
+      "points": 214,
+      "price": 33.2
+    }
+  },
+  {
+    "pilot": {
       "name": "K. Raikkonen",
       "points": 53,
       "price": 9.3
@@ -78,9 +57,9 @@
   },
   {
     "pilot": {
-      "name": "L. Hamilton",
-      "points": 214,
-      "price": 33.2
+      "name": "P. Gasly",
+      "points": 107,
+      "price": 11.7
     }
   },
   {
@@ -106,16 +85,23 @@
   },
   {
     "pilot": {
-      "name": "L. Stroll",
-      "points": 42,
-      "price": 13.4
+      "name": "C. Sainz",
+      "points": 93,
+      "price": 14.7
     }
   },
   {
     "constructor": {
-      "name": "Williams",
-      "points": 39,
-      "price": 6.3
+      "name": "Alfa Romeo Racing",
+      "points": 85,
+      "price": 9.2
+    }
+  },
+  {
+    "pilot": {
+      "name": "A. Giovinazzi",
+      "points": 42,
+      "price": 8
     }
   },
   {
@@ -161,6 +147,13 @@
     }
   },
   {
+    "pilot": {
+      "name": "M. Verstappen",
+      "points": 226,
+      "price": 25.5
+    }
+  },
+  {
     "constructor": {
       "name": "McLaren",
       "points": 235,
@@ -183,16 +176,16 @@
   },
   {
     "pilot": {
-      "name": "M. Schumacher",
-      "points": 55,
-      "price": 5.8
+      "name": "C. Leclerc",
+      "points": 128,
+      "price": 18.3
     }
   },
   {
     "pilot": {
-      "name": "C. Leclerc",
-      "points": 128,
-      "price": 18.3
+      "name": "M. Schumacher",
+      "points": 55,
+      "price": 5.8
     }
   },
   {
@@ -206,7 +199,14 @@
     "constructor": {
       "name": "Ferrari",
       "points": 206,
-      "price": 19.7
+      "price": 19.6
+    }
+  },
+  {
+    "pilot": {
+      "name": "L. Stroll",
+      "points": 42,
+      "price": 13.4
     }
   }
 ]
