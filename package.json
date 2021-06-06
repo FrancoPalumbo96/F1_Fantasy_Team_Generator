@@ -1,0 +1,11 @@
+{
+  "name": "f1-fantasy",
+  "version": "1.0.0",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.9",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "axios": "^0.21.1"
+  }
+}

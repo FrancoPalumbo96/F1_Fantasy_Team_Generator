@@ -1,0 +1,212 @@
+[
+  {
+    "constructor": {
+      "name": "Williams",
+      "points": 39,
+      "price": 6.3
+    }
+  },
+  {
+    "pilot": {
+      "name": "L. Norris",
+      "points": 161,
+      "price": 13.9
+    }
+  },
+  {
+    "pilot": {
+      "name": "C. Sainz",
+      "points": 94,
+      "price": 14.7
+    }
+  },
+  {
+    "constructor": {
+      "name": "AlphaTauri",
+      "points": 87,
+      "price": 12.6
+    }
+  },
+  {
+    "pilot": {
+      "name": "S. Perez",
+      "points": 114,
+      "price": 18.2
+    }
+  },
+  {
+    "constructor": {
+      "name": "Alpine",
+      "points": 90,
+      "price": 15.1
+    }
+  },
+  {
+    "constructor": {
+      "name": "Alfa Romeo Racing",
+      "points": 64,
+      "price": 9.2
+    }
+  },
+  {
+    "pilot": {
+      "name": "N. Mazepin",
+      "points": 12,
+      "price": 5.3
+    }
+  },
+  {
+    "pilot": {
+      "name": "K. Raikkonen",
+      "points": 40,
+      "price": 9.3
+    }
+  },
+  {
+    "pilot": {
+      "name": "L. Hamilton",
+      "points": 223,
+      "price": 33.2
+    }
+  },
+  {
+    "pilot": {
+      "name": "P. Gasly",
+      "points": 76,
+      "price": 11.7
+    }
+  },
+  {
+    "pilot": {
+      "name": "S. Vettel",
+      "points": 52,
+      "price": 14.9
+    }
+  },
+  {
+    "pilot": {
+      "name": "Y. Tsunoda",
+      "points": 18,
+      "price": 8.4
+    }
+  },
+  {
+    "pilot": {
+      "name": "M. Verstappen",
+      "points": 230,
+      "price": 25.5
+    }
+  },
+  {
+    "constructor": {
+      "name": "Red Bull Racing",
+      "points": 307,
+      "price": 26.1
+    }
+  },
+  {
+    "constructor": {
+      "name": "Mercedes",
+      "points": 285,
+      "price": 37.3
+    }
+  },
+  {
+    "constructor": {
+      "name": "Aston Martin",
+      "points": 87,
+      "price": 16.4
+    }
+  },
+  {
+    "constructor": {
+      "name": "Haas F1 Team",
+      "points": 48,
+      "price": 6.1
+    }
+  },
+  {
+    "pilot": {
+      "name": "N. Latifi",
+      "points": 7,
+      "price": 6.4
+    }
+  },
+  {
+    "pilot": {
+      "name": "G. Russell",
+      "points": 26,
+      "price": 6.2
+    }
+  },
+  {
+    "pilot": {
+      "name": "F. Alonso",
+      "points": 35,
+      "price": 14.8
+    }
+  },
+  {
+    "constructor": {
+      "name": "McLaren",
+      "points": 205,
+      "price": 18.6
+    }
+  },
+  {
+    "pilot": {
+      "name": "A. Giovinazzi",
+      "points": 31,
+      "price": 8
+    }
+  },
+  {
+    "pilot": {
+      "name": "D. Ricciardo",
+      "points": 76,
+      "price": 16
+    }
+  },
+  {
+    "pilot": {
+      "name": "M. Schumacher",
+      "points": 43,
+      "price": 5.8
+    }
+  },
+  {
+    "pilot": {
+      "name": "C. Leclerc",
+      "points": 118,
+      "price": 18.3
+    }
+  },
+  {
+    "pilot": {
+      "name": "E. Ocon",
+      "points": 67,
+      "price": 10.5
+    }
+  },
+  {
+    "pilot": {
+      "name": "V. Bottas",
+      "points": 89,
+      "price": 23
+    }
+  },
+  {
+    "constructor": {
+      "name": "Ferrari",
+      "points": 200,
+      "price": 19.7
+    }
+  },
+  {
+    "pilot": {
+      "name": "L. Stroll",
+      "points": 57,
+      "price": 13.4
+    }
+  }
+]
