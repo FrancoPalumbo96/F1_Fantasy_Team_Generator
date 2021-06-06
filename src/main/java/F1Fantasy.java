@@ -1,11 +1,12 @@
 import java.math.BigDecimal;
-import java.util.ArrayList;
 import java.util.List;
 
 public class F1Fantasy {
     public static void main(String[] args) {
 
-        Tuple<List<Pilot>, List<Constructor>> dataTuple = JsonReader.read();
+        int raceNumber = 5;
+        String filePath = "src/main/resources/standing_results_race_" + raceNumber + ".json";
+        Tuple<List<Pilot>, List<Constructor>> dataTuple = JsonReader.read(filePath);
 
         List<Pilot> pilots = dataTuple.x;
         List<Constructor> constructors = dataTuple.y;
@@ -28,6 +29,8 @@ public class F1Fantasy {
 
     private static void checkData(List<Pilot> pilots, List<Constructor> constructors){
         System.out.println("- - - - - - - - - - DATA - - - - - - - - - -");
+        System.out.println("Total Pilots: " + pilots.size());
+        System.out.println("Total Constructors: " + constructors.size());
         for (Pilot p: pilots) {
             System.out.println("Name: " + p.getName() + " Price: " + p.getPrice() + " Points: " + p.getPoints());
         }

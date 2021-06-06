@@ -42,20 +42,20 @@ public class JsonReader {
 
     }
 
-    public static Tuple<List<Pilot>, List<Constructor>> read(){
+    public static Tuple<List<Pilot>, List<Constructor>> read(String file){
         //JSON parser object to parse read file
         JSONParser jsonParser = new JSONParser();
 
         List<Pilot> pilots = new ArrayList<>();
         List<Constructor> constructors = new ArrayList<>();
 
-        try (FileReader reader = new FileReader("src/main/resources/data.json"))
+        try (FileReader reader = new FileReader(file))
         {
             //Read JSON file
             Object obj = jsonParser.parse(reader);
 
             JSONArray slots = (JSONArray) obj;
-            System.out.println(slots);
+            //System.out.println(slots);
 
 
             //Iterate over employee array
@@ -79,9 +79,6 @@ public class JsonReader {
         } catch (IOException | ParseException e) {
             e.printStackTrace();
         }
-
-        System.out.println("Total Pilots: " + pilots.size());
-        System.out.println("Total Constructors: " + constructors.size());
 
         return new Tuple<>(pilots, constructors);
     }
