@@ -1,8 +1,5 @@
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 public class Helper {
 
@@ -79,6 +76,52 @@ public class Helper {
             returnSlots.add(slots.get(p));
         }
         return returnSlots;
+    }
+
+    public static Tuple<List<Pilot>, List<Constructor>> pointsByLastRaces(int initialRace, int finalRace){
+
+        String initialFilePath = "src/main/resources/standing_results_race_" + initialRace + ".json";
+        String finalFilePath = "src/main/resources/standing_results_race_" + finalRace + ".json";
+        Tuple<List<Pilot>, List<Constructor>> initialResults = JsonReader.read(initialFilePath);
+        Tuple<List<Pilot>, List<Constructor>> finalResults = JsonReader.read(finalFilePath);
+
+        List<Pilot> pilotsInitialResults = initialResults.x;
+        List<Constructor> constructorsInitialResults = initialResults.y;
+
+        List<Pilot> pilotsFinalResults = finalResults.x;
+        List<Constructor> constructorsFinalResults = finalResults.y;
+
+        List<Pilot> pilotsIntervalResults = new ArrayList<>();
+        List<Constructor> constructorIntervalResults = new ArrayList<>();
+
+        for (Pilot p:pilotsFinalResults) {
+            Optional<Pilot> optional = pilotsInitialResults.stream()
+                    .filter(pilot -> p.getName().equals(pilot.getName()))
+                    .findFirst();
+            if (optional.isPresent()){
+                int points = p.getPoints() - optional.get().getPoints();
+                Pilot intervalPilotResult = new Pilot(p.getName(), p.getPrice(), points);
+                pilotsIntervalResults.add(intervalPilotResult);
+            } else {
+                System.out.println(p.getName() + " will not be considered");
+            }
+        }
+
+        for (Constructor c:constructorsFinalResults) {
+            Optional<Constructor> optional = constructorsInitialResults.stream()
+                    .filter(constructor -> c.getName().equals(constructor.getName()))
+                    .findFirst();
+            if (optional.isPresent()){
+                int points = c.getPoints() - optional.get().getPoints();
+                Constructor intervalPilotResult = new Constructor(c.getName(), c.getPrice(), points);
+                constructorIntervalResults.add(intervalPilotResult);
+            } else {
+                System.out.println(c.getName() + " will not be considered");
+            }
+        }
+
+        return new Tuple<>(pilotsIntervalResults, constructorIntervalResults);
+
     }
 }
 

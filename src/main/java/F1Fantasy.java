@@ -7,7 +7,6 @@ public class F1Fantasy {
         //TODO make raceNumber a globar variable or add to json
         //TODO make the app runnable from one file
         //TODO add command to make the app from a promt message
-        //TODO best teams from last x races
 
         int raceNumber = 6;
         String filePath = "src/main/resources/standing_results_race_" + raceNumber + ".json";
@@ -24,6 +23,19 @@ public class F1Fantasy {
 
         List<Team> bestTeams = Helper.bestTeams(pilots, constructors, 5, 10, maxPrice);
         printBestTeams(bestTeams);
+
+
+        System.out.println("---------------------------------------------");
+        int initialRace = 5;
+        int finalRace = 6;
+        System.out.println("Best Team Last Races from " + initialRace + " to " + finalRace);
+
+        dataTuple = Helper.pointsByLastRaces(initialRace, finalRace);
+        pilots = dataTuple.x;
+        constructors = dataTuple.y;
+
+        bestTeams = Helper.bestTeams(pilots, constructors, 5, 10, maxPrice);
+        printBestTeams(bestTeams);
     }
 
     private static void printBestTeams(List<Team> teams){
@@ -34,7 +46,7 @@ public class F1Fantasy {
         }
     }
 
-    private static void checkData(List<Pilot> pilots, List<Constructor> constructors){
+    public static void checkData(List<Pilot> pilots, List<Constructor> constructors){
         System.out.println("- - - - - - - - - - DATA - - - - - - - - - -");
         System.out.println("Total Pilots: " + pilots.size());
         System.out.println("Total Constructors: " + constructors.size());
